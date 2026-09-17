@@ -21,8 +21,9 @@ body::before {
   z-index: -1;
   opacity: 0.05;
   background-image: url("assets/logo-mark.png");
-  background-repeat: repeat;
-  background-size: 220px auto;
+  background-repeat: no-repeat;
+  background-size: 500px auto;
+  background-position: center center;
   pointer-events: none;
 }
 
