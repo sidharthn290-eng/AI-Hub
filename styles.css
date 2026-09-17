@@ -459,7 +459,7 @@ details:hover,
 }
 
 .testimonial.wide {
-  grid-column: span 4;
+  grid-column: span 2;
 }
 
 .testimonial p {
@@ -531,7 +531,21 @@ details:hover,
   background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
 }
 
-.instagram-icon svg {
+.website-icon {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(242, 199, 124, 0.24), rgba(8, 48, 82, 0.46)),
+    rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(242, 199, 124, 0.28);
+}
+
+.instagram-icon svg,
+.website-icon svg {
   width: 17px;
   height: 17px;
   fill: none;
