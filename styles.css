@@ -1,14 +1,14 @@
 :root {
-  --bg: #050505;
+  --bg: #051f40;
   --panel: #0c0c0c;
   --panel-2: #101010;
   --line: rgba(255, 255, 255, 0.11);
   --line-gold: rgba(224, 170, 96, 0.42);
-  --text: #f7f7f2;
+  --text: #ffffff;
   --muted: #8a8a8a;
   --gold: #d89b50;
   --gold-2: #f1c174;
-  --navy: #061f3b;
+  --navy: #062e60;
   --max: 1000px;
 }
 
