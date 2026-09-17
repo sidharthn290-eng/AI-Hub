@@ -553,24 +553,6 @@ details:hover,
   stroke-width: 1.8;
 }
 
-.testimonial-actions {
-  display: flex;
-  gap: 8px;
-  padding: 14px 16px 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.testimonial-actions span {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.62);
-}
-
-.testimonial-actions span:first-child {
-  background: var(--gold);
-}
-
 .section-heading {
   display: grid;
   justify-items: center;
