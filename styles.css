@@ -2,14 +2,28 @@
   --bg: #050505;
   --panel: #0c0c0c;
   --panel-2: #101010;
-  --line: rgba(255, 255, 255, 0.11);
+  --line: rgba(6, 31, 59, 0.4);
   --line-gold: rgba(224, 170, 96, 0.42);
   --text: #f7f7f2;
   --muted: #8a8a8a;
   --gold: #d89b50;
   --gold-2: #f1c174;
   --navy: #061f3b;
+  --brand-stain: rgba(6, 31, 59, 0.12);
+  --brand-glow-gold: rgba(216, 155, 80, 0.06);
   --max: 1000px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.03;
+  background-image: url("assets/logo-mark.png");
+  background-repeat: repeat;
+  background-size: 220px;
+  pointer-events: none;
 }
 
 * {
@@ -171,6 +185,9 @@ img {
   place-items: center;
   text-align: center;
   overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 30%, var(--brand-stain), transparent 50%),
+    radial-gradient(circle at 30% 70%, rgba(216, 155, 80, 0.04), transparent 40%);
 }
 
 .hero-glow {
@@ -323,6 +340,9 @@ h3 {
 
 .testimonials {
   padding-top: 42px;
+  background:
+    radial-gradient(circle at 20% 50%, var(--brand-glow-gold), transparent 60%),
+    radial-gradient(circle at 80% 20%, var(--brand-stain), transparent 50%);
 }
 
 .testimonials h2,
@@ -414,6 +434,9 @@ details:hover,
 
 .services {
   padding-top: 72px;
+  background:
+    radial-gradient(circle at 70% 30%, var(--brand-glow-gold), transparent 50%),
+    radial-gradient(circle at 30% 70%, rgba(27, 149, 232, 0.03), transparent 50%);
 }
 
 .service-grid {
@@ -488,6 +511,8 @@ details p {
 
 .comparison {
   padding-top: 84px;
+  background:
+    radial-gradient(circle at 50% 50%, var(--brand-stain), transparent 60%);
 }
 
 .comparison-grid {
@@ -553,6 +578,8 @@ details p {
 
 .process {
   padding-top: 82px;
+  background:
+    radial-gradient(circle at 50% 0, var(--brand-stain), transparent 50%);
 }
 
 .process-grid {
@@ -638,6 +665,8 @@ details p {
 .founder {
   padding-top: 94px;
   text-align: center;
+  background:
+    radial-gradient(circle at 50% 50%, var(--brand-glow-gold), transparent 50%);
 }
 
 .founder-grid {
@@ -750,7 +779,7 @@ body.cursor-link .cursor-ring {
   border-top: 1px solid var(--line);
   background:
     radial-gradient(circle at 50% 0, rgba(224, 170, 96, 0.18), transparent 16rem),
-    #050505;
+    var(--bg);
   color: #777;
 }
 
