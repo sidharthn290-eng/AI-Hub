@@ -750,7 +750,7 @@ body.cursor-link .cursor-ring {
   border-top: 1px solid var(--line);
   background:
     radial-gradient(circle at 50% 0, rgba(224, 170, 96, 0.18), transparent 16rem),
-    #050505;
+    var(--bg);
   color: #777;
 }
 
