@@ -1,14 +1,14 @@
 :root {
-  --bg: #051f40;
+  --bg: #050505;
   --panel: #0c0c0c;
   --panel-2: #101010;
   --line: rgba(255, 255, 255, 0.11);
   --line-gold: rgba(224, 170, 96, 0.42);
-  --text: #ffffff;
+  --text: #f7f7f2;
   --muted: #8a8a8a;
   --gold: #d89b50;
   --gold-2: #f1c174;
-  --navy: #062e60;
+  --navy: #061f3b;
   --max: 1000px;
 }
 
@@ -750,7 +750,7 @@ body.cursor-link .cursor-ring {
   border-top: 1px solid var(--line);
   background:
     radial-gradient(circle at 50% 0, rgba(224, 170, 96, 0.18), transparent 16rem),
-    var(--bg);
+    #050505;
   color: #777;
 }
 
