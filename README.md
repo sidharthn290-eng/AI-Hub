@@ -1,6 +1,6 @@
-# The AI Hub
+# Ripple Curators
 
-Static landing page for The AI Hub, a premium talent management and influencer marketing agency.
+Static landing page for Ripple Curators, a premium talent management and influencer marketing agency.
 
 ## Preview locally
 
