@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" role="img" aria-labelledby="title">
-  <title id="title">Artlist</title>
-  <rect width="200" height="64" rx="16" fill="none"/>
-  <path d="M14 47l18-32 18 32h-9l-3.5-7h-11L23 47h-9zm15.7-15h4.6L32 27.4 29.7 32z" fill="#f2c77c"/>
-  <text x="62" y="42" fill="#f7f7f2" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">Artlist</text>
-</svg>
