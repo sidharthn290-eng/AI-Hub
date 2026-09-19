@@ -374,22 +374,19 @@ h3 {
 
 .logo-row span {
   min-height: 42px;
-  min-width: 168px;
+  min-width: 190px;
   display: grid;
   place-items: center;
-  padding: 0 22px;
+  padding: 0 18px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.035);
-  color: rgba(255, 255, 255, 0.78);
-  font-size: clamp(18px, 2vw, 28px);
-  font-weight: 800;
-  letter-spacing: 0;
 }
 
 .logo-row img {
-  max-width: 148px;
-  max-height: 42px;
+  width: 100%;
+  max-width: 164px;
+  max-height: 38px;
   object-fit: contain;
 }
 

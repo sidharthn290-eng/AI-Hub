@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 64" role="img" aria-labelledby="title">
+  <title id="title">Luma</title>
+  <rect width="180" height="64" rx="16" fill="none"/>
+  <path d="M32 13l6.6 14.4L53 34l-14.4 6.6L32 55l-6.6-14.4L11 34l14.4-6.6L32 13z" fill="#f2c77c"/>
+  <text x="64" y="42" fill="#f7f7f2" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">Luma</text>
+</svg>
