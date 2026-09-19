@@ -33,7 +33,7 @@ if (logoRow && !prefersReducedMotion) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".partner-band, .roster-heading, .creator-card, .testimonials h2, .testimonial, .section-heading, .service-card, .process-grid article, .faq-list, .founder-grid"
+  ".partner-band, .roster-heading, .testimonials h2, .testimonial, .section-heading, .service-card, .process-grid article, .faq-list, .founder-grid"
 );
 
 if (prefersReducedMotion) {

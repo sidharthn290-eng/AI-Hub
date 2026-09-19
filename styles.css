@@ -462,94 +462,53 @@ h3 {
 
 .roster-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 54px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 48px;
 }
 
 .creator-card {
-  min-height: 420px;
+  min-height: 520px;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  border-radius: 0;
   background: #0a0d10;
   transform: translate3d(var(--tilt-x, 0), var(--tilt-y, 0), 0);
-  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+  transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
 .creator-card:hover {
-  border-color: rgba(224, 170, 96, 0.34);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.44);
 }
 
 .creator-visual {
   height: 100%;
-  min-height: 420px;
-  display: grid;
-  place-items: center;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.34)),
-    radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.12), transparent 10rem);
+  min-height: 520px;
 }
 
-.creator-visual:before {
-  content: "";
-  position: absolute;
-  inset: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 50%;
-  opacity: 0.7;
+.creator-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  filter: saturate(1.04) contrast(1.04);
+  transition: transform 500ms ease, filter 500ms ease;
 }
 
-.creator-visual span {
-  position: relative;
-  z-index: 1;
-  width: 138px;
-  height: 138px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background:
-    linear-gradient(#0b0e11, #0b0e11) padding-box,
-    linear-gradient(135deg, rgba(242, 199, 124, 0.96), rgba(8, 48, 82, 0.86)) border-box;
-  border: 2px solid transparent;
-  color: white;
-  font-size: 34px;
-  font-weight: 800;
-}
-
-.creator-visual-one {
-  background-color: #101214;
-}
-
-.creator-visual-two {
-  background-color: #0b1c2c;
-}
-
-.creator-visual-three {
-  background-color: #15120c;
-}
-
-.creator-visual-four {
-  background-color: #11151b;
-}
-
-.creator-visual-five {
-  background-color: #0d1512;
-}
-
-.creator-visual-six {
-  background-color: #171015;
+.creator-card:hover .creator-visual img {
+  transform: scale(1.045);
+  filter: saturate(1.14) contrast(1.08);
 }
 
 .creator-info {
   position: absolute;
+  z-index: 1;
   left: 0;
   right: 0;
   bottom: 0;
   padding: 26px;
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.88) 24%);
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.72) 18%, rgba(0, 0, 0, 0.98));
 }
 
 .creator-info span {
@@ -571,6 +530,32 @@ h3 {
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
+}
+
+.creator-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.creator-socials a {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.creator-socials a:hover {
+  border-color: rgba(242, 199, 124, 0.5);
+  color: var(--gold-2);
 }
 
 .testimonials {
