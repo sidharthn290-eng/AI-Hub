@@ -345,14 +345,6 @@ h3 {
   backdrop-filter: blur(18px);
 }
 
-.rating {
-  display: inline-flex;
-  gap: 3px;
-  color: white;
-  font-size: 14px;
-  line-height: 1;
-}
-
 .partner-band p {
   margin: 0;
   color: #a7a7a7;
@@ -371,7 +363,7 @@ h3 {
   width: max-content;
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 18px;
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.74);
   font-size: clamp(17px, 2.2vw, 30px);
@@ -382,11 +374,17 @@ h3 {
 
 .logo-row span {
   min-height: 42px;
-  min-width: 176px;
+  min-width: 168px;
   display: grid;
   place-items: center;
-  opacity: 0.76;
-  filter: grayscale(1);
+  padding: 0 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.035);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 800;
+  letter-spacing: 0;
 }
 
 .logo-row img {
@@ -397,6 +395,150 @@ h3 {
 
 .logo-marquee:hover .logo-row {
   animation-play-state: paused;
+}
+
+.creator-roster {
+  padding-top: 96px;
+  background:
+    radial-gradient(circle at 12% 28%, rgba(217, 164, 92, 0.11), transparent 28rem),
+    radial-gradient(circle at 90% 66%, rgba(8, 48, 82, 0.24), transparent 32rem);
+}
+
+.roster-heading {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 42px;
+  align-items: end;
+}
+
+.roster-note {
+  max-width: 360px;
+  margin: 0;
+  color: var(--muted);
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(30px, 3.4vw, 48px);
+  font-style: italic;
+  line-height: 1.05;
+}
+
+.roster-heading h2 {
+  margin: 0;
+  font-size: clamp(58px, 8.5vw, 126px);
+  line-height: 0.86;
+  text-align: right;
+}
+
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 54px;
+}
+
+.creator-card {
+  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #0a0d10;
+  transform: translate3d(var(--tilt-x, 0), var(--tilt-y, 0), 0);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.creator-card:hover {
+  border-color: rgba(224, 170, 96, 0.34);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
+}
+
+.creator-visual {
+  height: 100%;
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.34)),
+    radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.12), transparent 10rem);
+}
+
+.creator-visual:before {
+  content: "";
+  position: absolute;
+  inset: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.creator-visual span {
+  position: relative;
+  z-index: 1;
+  width: 138px;
+  height: 138px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    linear-gradient(#0b0e11, #0b0e11) padding-box,
+    linear-gradient(135deg, rgba(242, 199, 124, 0.96), rgba(8, 48, 82, 0.86)) border-box;
+  border: 2px solid transparent;
+  color: white;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.creator-visual-one {
+  background-color: #101214;
+}
+
+.creator-visual-two {
+  background-color: #0b1c2c;
+}
+
+.creator-visual-three {
+  background-color: #15120c;
+}
+
+.creator-visual-four {
+  background-color: #11151b;
+}
+
+.creator-visual-five {
+  background-color: #0d1512;
+}
+
+.creator-visual-six {
+  background-color: #171015;
+}
+
+.creator-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 26px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.88) 24%);
+}
+
+.creator-info span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--gold-2);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.creator-info h3 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+.creator-info p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .testimonials {
@@ -426,7 +568,6 @@ h3 {
 
 .testimonial,
 .service-card,
-.compare-column,
 details,
 .founder-card {
   border: 1px solid var(--line);
@@ -438,7 +579,6 @@ details,
 
 .testimonial:hover,
 .service-card:hover,
-.compare-column:hover,
 details:hover,
 .founder-card:hover {
   border-color: rgba(224, 170, 96, 0.34);
@@ -638,73 +778,6 @@ details p {
   color: rgba(242, 199, 124, 0.86);
   font-size: 12px;
   font-weight: 800;
-}
-
-.comparison {
-  padding-top: 100px;
-  background:
-    radial-gradient(circle at 50% 50%, var(--brand-stain), transparent 34rem);
-}
-
-.comparison-grid {
-  width: min(calc(100% - 56px), 1060px);
-  margin: 34px auto 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 34px;
-  align-items: end;
-}
-
-.compare-column {
-  min-height: 340px;
-  padding: 34px;
-}
-
-.compare-column h3 {
-  margin: 0 0 24px;
-  text-align: left;
-  color: #5f5f5f;
-  font-size: 22px;
-}
-
-.compare-column.featured {
-  border-color: var(--line-gold);
-  background:
-    radial-gradient(circle at 86% 0, rgba(216, 155, 80, 0.28), transparent 9rem),
-    var(--panel-2);
-}
-
-.compare-column.featured h3 {
-  color: white;
-}
-
-.compare-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.compare-column li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 0;
-  color: #6b6b6b;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.compare-column li span {
-  color: var(--gold);
-  font-weight: 800;
-}
-
-.compare-column.muted li span {
-  color: #565656;
-}
-
-.compare-column.featured li {
-  color: white;
 }
 
 .process {
@@ -1077,6 +1150,42 @@ body.cursor-link .cursor-ring {
     max-height: 38px;
   }
 
+  .creator-roster {
+    padding-top: 66px;
+  }
+
+  .roster-heading {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .roster-note {
+    max-width: 340px;
+    margin-inline: auto;
+    font-size: 30px;
+  }
+
+  .roster-heading h2 {
+    font-size: clamp(52px, 15vw, 76px);
+    text-align: center;
+  }
+
+  .roster-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 34px;
+  }
+
+  .creator-card,
+  .creator-visual {
+    min-height: 370px;
+  }
+
+  .creator-info {
+    padding: 22px;
+  }
+
   .testimonials {
     padding-top: 34px;
   }
@@ -1104,7 +1213,6 @@ body.cursor-link .cursor-ring {
 
   .testimonial-grid,
   .service-grid,
-  .comparison-grid,
   .process-grid,
   .footer-grid {
     grid-template-columns: 1fr;
@@ -1128,7 +1236,6 @@ body.cursor-link .cursor-ring {
     margin-bottom: 36px;
   }
 
-  .comparison-grid,
   .process-grid,
   .faq-layout {
     width: min(calc(100% - 32px), 440px);
@@ -1239,7 +1346,4 @@ body.cursor-link .cursor-ring {
     max-width: 340px;
   }
 
-  .compare-column {
-    padding: 18px;
-  }
 }

@@ -33,7 +33,7 @@ if (logoRow && !prefersReducedMotion) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".partner-band, .testimonials h2, .testimonial, .section-heading, .service-card, .compare-column, .process-grid article, .faq-list, .founder-grid"
+  ".partner-band, .roster-heading, .creator-card, .testimonials h2, .testimonial, .section-heading, .service-card, .process-grid article, .faq-list, .founder-grid"
 );
 
 if (prefersReducedMotion) {
@@ -57,7 +57,7 @@ if (prefersReducedMotion) {
 }
 
 const motionCards = document.querySelectorAll(
-  ".testimonial, .service-card, .compare-column, details"
+  ".creator-card, .testimonial, .service-card, details"
 );
 
 if (!prefersReducedMotion) {
